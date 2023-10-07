@@ -1,9 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 import { MdDashboard } from "react-icons/md";
 import { HiBuildingOffice2, HiUserGroup } from "react-icons/hi2";
-import { AiOutlineUsergroupAdd, AiOutlineDown } from "react-icons/ai";
-import { FcLeave } from "react-icons/fc";
-import { BiTask } from "react-icons/bi";
+import { AiOutlineDown } from "react-icons/ai";
+
 import { useState } from "react";
 
 const Navdata = [
@@ -31,40 +30,19 @@ const Navdata = [
   },
   {
     title: "product",
-    path: "/product",
     logo: <HiUserGroup />,
     subData: [
       {
-        title: "add category",
-        path: "/category/addcat",
+        title: "add product",
+        path: "/product/addproduct",
         logo: <MdDashboard />,
       },
       {
-        title: "view category",
-        path: "/category/viewcat",
+        title: "view product",
+        path: "/product/viewproduct",
         logo: <MdDashboard />,
       },
     ],
-  },
-  {
-    title: "task",
-    path: "/task",
-    logo: <BiTask />,
-  },
-  {
-    title: "task status",
-    path: "/taskstatus",
-    logo: <BiTask />,
-  },
-  {
-    title: "leave",
-    path: "/leave",
-    logo: <FcLeave />,
-  },
-  {
-    title: "create EID",
-    path: "/create",
-    logo: <AiOutlineUsergroupAdd />,
   },
 ];
 
@@ -116,7 +94,7 @@ const Sidebar = () => {
                 {val.subData.map((subVal, j) => (
                   <Link to={subVal.path} key={j}>
                     <div
-                      className={`flex items-center gap-2 p-2 rounded-md  capitalize text-white ${
+                      className={`flex items-center gap-2 p-1 rounded-md  capitalize text-white ${
                         location.pathname === subVal.path &&
                         "text-gray-700 bg-[#F1F9FB] mr-4 shadow-md shadow-gray-700 font-bold text-lg"
                       }`}
