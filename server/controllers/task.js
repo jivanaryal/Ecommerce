@@ -1,4 +1,4 @@
-const Employee = require("../models/task");
+const Product = require("../models/product");
 
 const postData = async (req, res) => {
   const { id } = req.params;

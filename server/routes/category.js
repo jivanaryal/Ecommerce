@@ -5,7 +5,7 @@ const {
   getSingleData,
   deleteData,
   updateData,
-} = require("../controllers/department");
+} = require("../controllers/category");
 const router = Router();
 
 router.route("/").get(getData).post(postData);

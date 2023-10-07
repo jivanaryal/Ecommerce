@@ -1,4 +1,4 @@
-const Department = require("../models/department");
+const Category = require("../models/category");
 
 const postData = async (req, res) => {
   try {

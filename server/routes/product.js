@@ -5,7 +5,7 @@ const {
   getSingleData,
   deleteData,
   updateData,
-} = require("../controllers/employee");
+} = require("../controllers/product");
 const multer = require("multer");
 const router = Router();
 

@@ -1,6 +1,6 @@
 const db = require("../db/connect");
 
-class Department {
+class Category {
   constructor(dept_name, dept_location) {
     this.dept_name = dept_name;
     this.dept_location = dept_location;
@@ -64,4 +64,4 @@ class Department {
   // Other methods...
 }
 
-module.exports = Department;
+module.exports = Category;

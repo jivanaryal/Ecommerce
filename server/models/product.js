@@ -1,5 +1,5 @@
 const db = require("../db/connect");
-class Employee {
+class Product {
   constructor(employeeData) {
     this.dept_id = employeeData.dept_id;
     this.salary = employeeData.salary;
@@ -78,4 +78,4 @@ class Employee {
   }
 }
 
-module.exports = Employee;
+module.exports = Product;
