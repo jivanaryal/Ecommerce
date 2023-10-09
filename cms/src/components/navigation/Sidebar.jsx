@@ -94,9 +94,9 @@ const Sidebar = () => {
                 {val.subData.map((subVal, j) => (
                   <Link to={subVal.path} key={j}>
                     <div
-                      className={`flex items-center gap-2 p-1 rounded-md  capitalize text-white ${
+                      className={`flex items-center gap-2 p-1 text-white mx-5 rounded-md  capitalize  ${
                         location.pathname === subVal.path &&
-                        "text-gray-700 bg-[#F1F9FB] mr-4 shadow-md shadow-gray-700 font-bold text-lg"
+                        "text-black bg-[#F1F9FB] shadow-md  font-bold "
                       }`}
                     >
                       <div className="text-base">{subVal.logo}</div>
